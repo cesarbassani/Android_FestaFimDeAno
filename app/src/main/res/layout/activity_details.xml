@@ -6,17 +6,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/background"
     tools:context="com.cesarbassani.festafimdeano.views.DetailsActivity">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/voc_vai_participar"/>
+        android:layout_height="0dp"
+        android:text="@string/voc_vai_participar"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="30sp"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
 
     <CheckBox
         android:id="@+id/check_participate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/voc_vai_participar"/>
+        android:textSize="30sp"
+        android:layout_weight="8"
+        android:layout_gravity="center"
+        android:text="@string/sim_vamos_nessa"/>
 
 </LinearLayout>
